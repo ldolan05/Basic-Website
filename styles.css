@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(239, 239, 239);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+}
+
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background: #ffffff;
+    z-index: 1000;
+    width: 100%;
+    margin: 0 0;
+    padding: 0 50px;
+    position: fixed;
+}
+
+#navbar-logo{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.navbar__menu{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar__item{
+    height: 200px;
+}
+
+.navbar__links{
+    color: rgb(14, 14, 14);
+    text-decoration: none;
+    height: 100%;
+    padding: 0 3rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.navbar__links:hover{
+    color: rgb(142, 140, 140);
+    transition: all 0.3s ease;
+}
+
+.navbar__btn{
+    display: flex;
+    align-items: center;
+}
+
+.navbar__btn.mobile{
+    display: none;
+}
+
+.navbar__btn.desktop{
+    display: flex;
+}
+
+.button{
+    background: rgb(239, 239, 239);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: rgb(14, 14, 14);
+    text-decoration: none;
+}
+
+.button:hover{
+    background: rgb(142, 140, 140);
+    transition: all 0.3s ease;
+}
+
+.navbar_toggle{
+    display: none;
+}
+
+@media screen and (max-width: 968px){
+    .navbar__toggle{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top:50px;
+        transform: translateY(-50%);
+        color: #ffffff;
+        z-index: 10;
+        font-size: 1.5rem;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+    }
+}
+
+/* at 37:58 in video: https://www.youtube.com/watch?v=yZnmEwzHfZw */
