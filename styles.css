@@ -25,6 +25,7 @@
     height: 100%; /* This makes the logo fill the height of its container */
     width: auto; /* This maintains the aspect ratio */
     object-fit: contain; /* This ensures the logo fits without distortion */
+    background-color: #ffffff;
 }
 
 #navbar-logo{
