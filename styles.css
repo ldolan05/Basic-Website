@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 150px;
     background: #ffffff;
     z-index: 1000;
     width: 100%;
@@ -21,10 +21,17 @@
     position: fixed;
 }
 
+.logo {
+    height: 100%; /* This makes the logo fill the height of its container */
+    width: auto; /* This maintains the aspect ratio */
+    object-fit: contain; /* This ensures the logo fits without distortion */
+}
+
 #navbar-logo{
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
+    height: 100%; /* Make the anchor tag full height of navbar */
+    display: flex; /* This helps with vertical alignment */
+    align-items: center; /* Centers the logo vertically */
+    padding: 0px; /* Optional: adds some space around the logo */
 }
 
 .navbar__menu{
@@ -42,7 +49,7 @@
     text-decoration: none;
     height: 100%;
     padding: 0 3rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     background-color: #ffffff;
@@ -80,7 +87,7 @@
     transition: all 0.3s ease;
 }
 
-.navbar_toggle{
+.navbar__toggle{
     display: none;
 }
 
