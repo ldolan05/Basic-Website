@@ -25,7 +25,7 @@
     height: 100%; /* This makes the logo fill the height of its container */
     width: auto; /* This maintains the aspect ratio */
     object-fit: contain; /* This ensures the logo fits without distortion */
-    background-color: #ffffff;
+    background-color: #ffffff
 }
 
 #navbar-logo{
@@ -92,12 +92,13 @@
     display: none;
 }
 
-@media screen and (max-width: 968px){
+
+@media screen and (max-width: 968px) {
     .navbar__toggle{
         display: block;
         position: absolute;
         right: 20px;
-        top:50px;
+        top:60px;
         transform: translateY(-50%);
         color: #ffffff;
         z-index: 10;
@@ -106,7 +107,61 @@
         cursor: pointer;
         padding: 0;
     }
+
+    .navbar__menu {
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        height: auto;
+        position: fixed;
+        top: 60px; /* Adjust based on your navbar height */
+        right: 0;
+        background-color: #ffffff;
+        z-index: 1000; /* Add this to ensure menu appears above other elements */
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar__menu.active {
+        display: flex !important;
+    }
+
+    .navbar__item {
+        height: auto !important; /* Force override any existing height */
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding: 1rem;
+        background-color: #ffffff;
+        border-bottom: 1px solid #f3f3f3;
+    }
+
+    .navbar__btn {
+        display: none;
+    }
+
+    .navbar__links {
+        text-align: left;
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .navbar__menu.active {
+        display: flex !important;
+        animation: slideIn 0.3s ease-out;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
 }
+
 .coming-soon {
     text-align: center;
     padding: 100px 20px;
