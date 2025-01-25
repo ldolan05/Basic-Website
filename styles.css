@@ -99,5 +99,59 @@
         padding: 0;
     }
 }
+.coming-soon {
+    text-align: center;
+    padding: 100px 20px;
+    margin: 0 auto;
+}
+
+.coming-soon h1 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.coming-soon p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    gap: 0px;
+    justify-content: center;
+}
+
+.coming-soon-button {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px; /* or use 50% for circular buttons */
+    background: rgb(239, 239, 239);
+    border: none;
+    border-radius: 4px;
+    color: rgb(14, 14, 14);
+    text-decoration: none;
+}
+
+.coming-soon-button i {
+    font-size: 30px;
+    transition: transform 0.3s ease;
+}
+
+.coming-soon-button:hover i {
+    transform: scale(1.2);
+}
 
 /* at 37:58 in video: https://www.youtube.com/watch?v=yZnmEwzHfZw */
